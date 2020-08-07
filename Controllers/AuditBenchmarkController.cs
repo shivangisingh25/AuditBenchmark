@@ -26,9 +26,6 @@ namespace AuditBenchmark.Controllers
                        new AuditBenchmarkModel{AuditType="SOX",BenchmarkNoAnswers=1}
                     };
             return Ok(benchmark);
-
-
-
         }
 
     }
