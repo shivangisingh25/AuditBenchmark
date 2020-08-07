@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: auditbenchmarkdepl
+  name: auditbenchmark
 spec:
   replicas: 1
   selector:
@@ -13,7 +13,7 @@ spec:
         app: AuditBenchmark
     spec:
       containers:
-      - name:  auditbenchmark
+      - name:   auditbenchmark
         image: auditcr.azurecr.io/auditbenchmarkrepos:latest
         ports:
         - containerPort: 8080
